@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+             
+	  
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/BackgroundColor"
+	android:layout_alignParentTop="true">    
+    
+    	<Button
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text=""
+    	android:drawableLeft="@drawable/defaultlogomediumdensity"
+    	android:background="@color/BackgroundColor"
+    	android:layout_alignParentLeft="true"
+    	android:onClick="goHome"/>
+
+		<ImageButton
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:src="@drawable/settings"
+			android:adjustViewBounds="true"
+			android:background="@color/BackgroundColor"
+			android:onClick="goSetting"
+			android:scaleType="fitXY"
+			android:layout_alignTop="@+id/imageButtonChat"
+			android:layout_toLeftOf="@+id/imageButtonChat"
+			android:layout_toStartOf="@+id/imageButtonChat"
+			android:id="@+id/imageButtonSettings"/>
+
+		<ImageButton
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:src="@drawable/chatoffline"
+			android:adjustViewBounds="true"
+			android:background="@color/BackgroundColor"
+			android:onClick="goChat"
+			android:scaleType="fitXY"
+			android:layout_alignTop="@+id/imageButtonJoinVidyo"
+			android:layout_toLeftOf="@+id/imageButtonJoinVidyo"
+			android:layout_toStartOf="@+id/imageButtonJoinVidyo"
+			android:id="@+id/imageButtonChat"/>
+
+		<ImageButton
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:src="@drawable/myjoinroom"
+			android:adjustViewBounds="true"
+			android:background="@color/BackgroundColor"
+			android:onClick="goJoinVideo"
+			android:scaleType="fitXY"
+			android:layout_alignTop="@+id/imageButtonCallVidyo"
+			android:layout_toLeftOf="@+id/imageButtonCallVidyo"
+			android:layout_toStartOf="@+id/imageButtonCallVidyo"
+			android:id="@+id/imageButtonJoinVidyo"/>
+
+		<ImageButton
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:src="@drawable/vidyo"
+			android:adjustViewBounds="true"
+			android:background="@color/BackgroundColor"
+			android:onClick="goVideo"
+			android:scaleType="fitXY"
+			android:layout_alignTop="@+id/imageButton"
+			android:layout_toLeftOf="@+id/imageButton"
+			android:layout_toStartOf="@+id/imageButton"
+			android:id="@+id/imageButtonCallVidyo"/>
+
+    	<ImageButton
+    	android:layout_width="30dp"
+    	android:layout_height="30dp"
+    	android:src="@drawable/mobilebuttonback"
+    	android:adjustViewBounds="true"
+    	android:background="@color/BackgroundColor"
+    	android:layout_alignParentRight="true"
+    	android:onClick="goBack"
+    	android:scaleType="fitXY"
+    	android:layout_marginTop="10dp"
+			android:id="@+id/imageButton" />
+    	
+	</RelativeLayout>
+	
+	<WebView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/webView" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:layout_weight="1"
+    android:configChanges="keyboardHidden|orientation|screenSize"/>
+                
+</LinearLayout>
+
+
+
+
+
+
+
+
